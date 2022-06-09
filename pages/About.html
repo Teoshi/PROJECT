@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>О сайте</title>
+	<link href="../style.css" rel="stylesheet" type="text/css" />
+	<link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="manifest" href="/site.webmanifest">
+	<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="theme-color" content="#ffffff">
+</head>
+
+<body>
+	<!--HEAD NAV BG/////////////////////////////////////////// -->
+	<div class="bgINTRO">
+		<nav class="navbar">
+			<a href="../index.html" class="logo">
+				<div><img src="../images/logo.png" alt="ALifeComedic"></div>
+      </a>
+      <ul class="nav-links">
+        <li class="nav-item NavB-1"><a href="../index.html" title="Главная">Главная</a></li>
+        <li class="nav-item NavB-2"><a href="Bio.html" title="Биография">Биография</a></li>
+        <li class="nav-item NavB-3"><a href="Filmography.html" title="Фильмография">Фильмография</a></li>
+        <li class="nav-item NavB-4"><a href="Facts.html" title="Интересные факты">Интересные факты</a></li>
+        <li class="nav-item NavB-5"><a href="About.html" class="BrCr" title="О сайте">О сайте</a></li>
+      </ul>
+      <div class="dropdown">
+        <button onclick="myFunction()" class="dropbtn icon-menu"></button>
+        <div id="myDropdown" class="dropdown-content">
+          <a href="../index.html" title="Главная">Главная</a>
+          <a href="Bio.html" title="Биография">Биография</a>
+          <a href="Filmography.html" title="Фильмографи">Фильмография</a>
+          <a href="Facts.html" title="Интересные факты">Интересные факты</a>
+          <a href="About.html" title="О сайте">О сайте</a>
+        </div>
+      </div>
+    </nav>
+  </div>
+  <!--About//////////////////////////////////////////////////-->
+	<div class="About">
+    <h1>О сайте</h1>
+    <p>Рад видеть Вас на своем сайте! C творчеством этого замечательного актера я знаком уже не один год. Билл Мюррей — человек, который действительно является одним из самых заметных и талантливых комедийных актеров современной Америки и абсолютно заслуженно полюбившийся многим зрителям своими незабываемыми образами.</p>
+    <div class="FormContainer">
+			<h2>Благодарю за то, что дочитали до этого раздела!</h2>
+      <h2>Если у Вас есть какие-либо вопросы или предложения, заполните следующую форму, и я обязательно рассмотрю ваши идеи!</h2>
+			<form method='get' action='../index.html' class="form">
+				<label for='name'>Введите ваше имя:</label><br>
+				<input type='text' required id='name' pattern=".{3,}"><br>
+				<label for='email'>Введите ваш e-mail: </label><br>
+				<input type='email' id='email' required ><br>
+				<label for='textar'>Введите свой текст: </label><br>
+				<textarea id='textar'></textarea><br>
+				<input type='submit' value='Отправить' class="btn">
+				<input type='reset' value='Стереть' class="btn">
+			</form>
+		</div>
+  </div>
+  <!--Footer/////////////////////////////////////////////////-->
+	<div class="Footer StF">
+    <div class="FIcons">
+      <a href="mailto:art1452@gmail.com" title="Mail" target="_blank"><i class="icon-envelop"></i></a>
+      <a href="https://www.instagram.com/" title="instagram" target="_blank"><i class="icon-instagram"></i></a>
+      <a href="https://twitter.com/?lang=ru" title="Twitter" target="_blank"><i class="icon-twitter"></i></a>
+      <a href="https://www.facebook.com/" title="Facebook" target="_blank"><i class="icon-facebook"></i></a>
+      <a href="https://web.telegram.org/z/" title="Telegram" target="_blank"><i class="icon-telegram"></i></a>
+      <a href="https://vk.com/" title="VK" target="_blank"><i class="icon-vk"></i></a>
+    </div>
+    <div class="Copy">
+      <h5>&copy; 2021 Teoshi. All Rights Reserved.</h5>
+    </div>
+  </div>
+  <button onclick="topFunction()" id="myBtn" class="icon-circle-up" title="Вверх"></button>
+  <script src='../js/ScrollTop.js'></script>
+  <script src="../js/DropBtn.js"></script>
+</body>
+
+</html>
